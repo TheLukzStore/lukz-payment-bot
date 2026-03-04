@@ -1,5 +1,4 @@
-/*
- * Flowix Open Source Project
+'QRISFAST'ISFAST' * Flowix Open Source Project
  *
  * Copyright (c) 2026
  * PT Inovixa Technologies Solution
@@ -87,7 +86,7 @@ app.post('/api/payment/create', csrfProtection, async (req, res) => {
         const reffId = `ORDER-${Date.now()}-${Math.floor(Math.random() * 900) + 100}`;
         const payload = {
             amount: config.product.price,
-            method_code: 'QRISFAST',
+            method_code: 'QRIS',
             fee_by_customer: false,
             reff_id: reffId
         };
@@ -173,4 +172,5 @@ app.use((err, req, res, next) => {
 
 app.listen(config.app.port, () => {
     console.log(`[System] Server running on http://localhost:${config.app.port}`);
+
 });
