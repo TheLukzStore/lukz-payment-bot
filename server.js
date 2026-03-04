@@ -1,4 +1,5 @@
-'QRISFAST'ISFAST' * Flowix Open Source Project
+/*
+ * Flowix Open Source Project
  *
  * Copyright (c) 2026
  * PT Inovixa Technologies Solution
@@ -172,5 +173,4 @@ app.use((err, req, res, next) => {
 
 app.listen(config.app.port, () => {
     console.log(`[System] Server running on http://localhost:${config.app.port}`);
-
 });
